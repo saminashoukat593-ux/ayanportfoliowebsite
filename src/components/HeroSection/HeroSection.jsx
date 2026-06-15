@@ -14,10 +14,23 @@ import './heroSection.css'
 const HeroSection = () => {
 
   let techIcons = [
-    <SiHtml5 />,
-    <FaCss3Alt />,
-    <IoLogoJavascript />,
-    <GrReactjs />
+      {
+        icon: <SiHtml5 />,
+        color: "orange",
+      },
+    {
+      icon: <FaCss3Alt />,
+      color: "#6cb9ff"
+   
+    },
+    {
+      icon: <IoLogoJavascript />,
+      color: "#fff617"
+    },
+    {
+     icon: <GrReactjs />,
+     color: "#6fa8dc" 
+    }
   ]
 
 
@@ -32,7 +45,7 @@ const HeroSection = () => {
           <p>Hi, I'm <span>Muhammad Hamza</span>. A passionate Full Stack NextJS | MERN Stack | ReactJS Developer based in Karachi, Pakistan. 📍</p>
 
 
-          <FaGithub className='icon'/>
+          <FaGithub className='icon' />
         </div>
 
         {/* IMAGE CONTAINER */}
@@ -42,16 +55,20 @@ const HeroSection = () => {
       </div>
 
       {/* SECOND CONTAINER */}
-      <div>
-        <h3>Tech Stack</h3>
+      <div className='heroSection-second-container'>
 
-        <span>|</span>
+        <div className='heroSection-secondcontainer-left'>
 
-      <div>
-        {techIcons.map((items) => (
-          items
-        ))}
-      </div>
+          <h3>Tech Stack</h3>
+
+          <span className='custom-line'></span>
+        </div>
+
+        <div className='heroSection-secondcontainer-skills-icon'>
+          {techIcons.map((items) => (
+            <h1 style={{color: items.color}}>{items.icon}</h1>
+          ))}
+        </div>
       </div>
     </div>
   )

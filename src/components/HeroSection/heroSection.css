@@ -18,7 +18,7 @@
 }
 
 .heroSection-firstContainer-leftSection {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     display: flex;
     flex-direction: column;
@@ -60,12 +60,101 @@
     /* border: 3px solid red; */
     height: 280px;
     width: 400px;
-    
+
 }
 
 .heroSection-image img {
     height: 100%;
     width: 100%;
 
-    
+
+}
+
+
+.heroSection-second-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 6rem;
+
+    /* border: 2px solid red; */
+}
+
+.heroSection-second-container h3 {
+
+    font-size: 2rem;
+    width: 8rem;
+
+    text-align: center;
+    line-height: 2rem;
+
+}
+
+
+.heroSection-secondcontainer-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* border: 2px solid red; */
+
+    position: relative;
+
+}
+
+.custom-line {
+    position: absolute;
+    height: 6rem;
+    width: 0.2rem;
+    background: linear-gradient(to bottom, violet, indigo, #001399, seagreen, #edd94c, orange, red);
+    left: 9rem;
+    border-radius: 1rem;
+}
+
+.heroSection-secondcontainer-skills-icon {
+    /* border: 2px solid red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.heroSection-secondcontainer-skills-icon h1 {
+    /* border: 2px solid yellow; */
+
+    font-size: 2.7rem;
+
+    color: orange;
+
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+
+    border-radius: 10rem;
+
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* border: 2px solid red; */
+
+    box-shadow: #32325d40 0 13px 27px -5px, #0000004d 0 8px 16px -8px;
+
+    animation: reverseRotate 8s linear infinite;
+
+
+}
+
+@keyframes reverseRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
