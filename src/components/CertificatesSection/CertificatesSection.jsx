@@ -2,7 +2,7 @@ import React from 'react'
 
 const CertificatesSection = () => {
   return (
-    <div>CertificatesSection</div>
+    <div>CertificatesSection To Be Done</div>
   )
 }
 
