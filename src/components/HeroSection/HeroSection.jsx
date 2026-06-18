@@ -42,7 +42,7 @@ const HeroSection = () => {
           <h1>Frontend ReactJS Developer</h1>
 
 
-          <p>Hi, I'm <span>Muhammad Hamza</span>. A passionate Full Stack NextJS | MERN Stack | ReactJS Developer based in Karachi, Pakistan. 📍</p>
+          <p>Hi, I'm <span>Muhammad Ayan Ali</span>. A passionate Full Stack NextJS | MERN Stack | ReactJS Developer based in Karachi, Pakistan. 📍</p>
 
 
           <FaGithub className='icon' />
