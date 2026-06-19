@@ -35,3 +35,69 @@
 .menuItems li:hover{
     background-color: rgb(124, 215, 164);
 }
+
+/* Hamburger toggle - hidden on desktop */
+.header-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: black;
+}
+
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 900px) {
+    .header img {
+        height: 70px;
+        width: 125px;
+    }
+
+    .header-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .menuItems {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+
+        background-color: rgb(251, 253, 255);
+        padding: 1rem;
+
+        border-top: 1px solid #ddd;
+        box-shadow: #32325d40 0 13px 27px -5px;
+
+        /* hidden state */
+        max-height: 0;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .menuItems-open {
+        max-height: 25rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .menuItems li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header img {
+        height: 60px;
+        width: 105px;
+    }
+}

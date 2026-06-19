@@ -3,7 +3,7 @@ import './aboutMe.css'
 
 const AboutMe = () => {
   return (
-    <div className='aboutme-section'>
+    <div className='aboutme-section' id='aboutme'>
       <div className='aboutme-image-container'>
         <img src="https://muhammadzuhaib.vercel.app/assets/aboutmee-7a57c3bb.svg" alt="" />
       </div>
