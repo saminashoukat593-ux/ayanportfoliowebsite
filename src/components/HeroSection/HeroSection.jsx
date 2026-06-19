@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FaGithub } from "react-icons/fa";
-import profilepicture from '../../assets/profilepicture.jpg'
+import profilepicture from '../../assets/image.jpeg'
 import { SiHtml5 } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
