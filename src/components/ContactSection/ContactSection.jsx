@@ -17,12 +17,12 @@ const ContactSection = () => {
     {
       icon: <MdEmail />,
       label: "Email",
-      value: "muhammadhamza@example.com"
+      value: "  muhammadayanshoukatali@gmail.com"
     },
     {
       icon: <IoCall />,
       label: "Phone",
-      value: "+92 300 0000000"
+      value: "+92 345 3829551"
     },
     {
       icon: <MdLocationOn />,

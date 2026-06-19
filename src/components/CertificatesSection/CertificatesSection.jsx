@@ -2,17 +2,18 @@ import React from 'react'
 import './certificatesSection.css'
 
 import { FaAward } from "react-icons/fa"
+import certificateImage from '../../assets/image.jpeg'
 
 const CertificatesSection = () => {
 
   // temporary placeholder image until real certificate images are added
-  let placeholderImage = "https://placehold.co/600x400?text=Certificate"
+  let placeholderImage = certificateImage;
 
   let certificatesData = [
     {
-      title: "ReactJS Developer Certification",
-      issuer: "Meta",
-      date: "2024",
+      title: "Frontend Development",
+      issuer: "Nayee Subah Foundation",
+      date: "2026",
       image: placeholderImage
     },
     {
