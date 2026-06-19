@@ -6,3 +6,31 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* offset for the sticky header when scrolling to a section */
+#home,
+#aboutme,
+#projects,
+#certificates,
+#contact {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 900px) {
+  #home,
+  #aboutme,
+  #projects,
+  #certificates,
+  #contact {
+    scroll-margin-top: 70px;
+  }
+}

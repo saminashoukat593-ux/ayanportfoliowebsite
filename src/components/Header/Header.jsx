@@ -1,32 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logoImage from '../../assets/logo.png'
+import { FaBars, FaTimes } from "react-icons/fa"
 import './header.css'
 
 const Header = () => {
 
+  let [menuOpen, setMenuOpen] = useState(false)
 
   let headerMenu = [
     {
       menuItemName: "Home",
-      link: "/home"
+      sectionId: "home"
     },
     {
       menuItemName: "About Me",
-      link: "/aboutme"
+      sectionId: "aboutme"
     },
     {
       menuItemName: "Projects",
-      link: "/projects"
+      sectionId: "projects"
     },
     {
       menuItemName: "Certificates",
-      link: "/certificates"
+      sectionId: "certificates"
     },
     {
       menuItemName: "Contact Me",
-      link: "/contact"
+      sectionId: "contact"
     },
   ]
+
+  const handleScroll = (sectionId) => {
+    setMenuOpen(false)
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
 
 
@@ -35,10 +45,17 @@ const Header = () => {
     <header className='header'>
       <img src={logoImage} alt="logo" />
 
+      <button
+        className='header-toggle'
+        aria-label='Toggle menu'
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
 
-      <ul className='menuItems'>
-        {headerMenu.map((item) => (
-          <li>{item.menuItemName}</li>
+      <ul className={`menuItems ${menuOpen ? 'menuItems-open' : ''}`}>
+        {headerMenu.map((item, index) => (
+          <li key={index} onClick={() => handleScroll(item.sectionId)}>{item.menuItemName}</li>
         ))}
       </ul>
 

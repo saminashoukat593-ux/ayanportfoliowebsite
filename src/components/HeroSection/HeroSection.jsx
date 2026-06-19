@@ -35,7 +35,7 @@ const HeroSection = () => {
 
 
   return (
-    <div className='heroSection'>
+    <div className='heroSection' id='home'>
       {/* FIRST CONTAINER */}
       <div className='heroSection-firstContainer'>
         <div className='heroSection-firstContainer-leftSection'>

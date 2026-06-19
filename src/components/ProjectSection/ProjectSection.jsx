@@ -19,7 +19,7 @@ const ProjectSection = () => {
   ]
 
   return (
-    <div className='projects-container'>
+    <div className='projects-container' id='projects'>
       <h1>Projects</h1>
 
       <h2>Each project is a unique piece of development 🧩</h2>
