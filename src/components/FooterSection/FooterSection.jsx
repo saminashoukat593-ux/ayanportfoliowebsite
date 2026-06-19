@@ -19,7 +19,7 @@ const FooterSection = () => {
       <div className='footer-content'>
 
         <div className='footer-brand'>
-          <h2>Muhammad Hamza</h2>
+          <h2>Muhammad Ayan Shoukat Ali</h2>
           <p>Frontend ReactJS Developer based in Karachi, Pakistan. Building clean, responsive and engaging web experiences.</p>
 
           <div className='footer-socials'>
@@ -41,7 +41,7 @@ const FooterSection = () => {
       </div>
 
       <div className='footer-bottom'>
-        <p>© {new Date().getFullYear()} Muhammad Hamza. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Muhammad Ayan Shoukat Ali. All rights reserved.</p>
       </div>
     </footer>
   )
