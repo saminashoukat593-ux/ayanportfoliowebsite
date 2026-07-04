@@ -67,6 +67,7 @@ const HeroSection = () => {
         <div className='heroSection-secondcontainer-skills-icon'>
           {techIcons.map((items) => (
             <h1 style={{color: items.color}}>{items.icon}</h1>
+            
           ))}
         </div>
       </div>
