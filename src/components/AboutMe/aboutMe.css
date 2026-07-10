@@ -12,7 +12,7 @@
 .aboutme-image-container{
     width: 2000px;
     height: 300px;
-
+    border-radius: 100px;
 }
 
 .aboutme-image-container img {
