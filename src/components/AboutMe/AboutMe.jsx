@@ -23,8 +23,8 @@ const AboutMe = () => {
         </p>
         
         <h1>My name is Ayan Shoukat Ali. I want to seek Front End Development</h1>
-
-
+        <span>I  am aFront End Developer</span>
+      </div>
 
 
 
