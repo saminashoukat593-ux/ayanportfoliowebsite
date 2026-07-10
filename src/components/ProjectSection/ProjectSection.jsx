@@ -1,7 +1,7 @@
 import React from 'react'
 import './projectSection.css'
 
-import projectpicture from '../../assets/image.png'
+import projectpicture from '../../assets/image.jpeg'
 
 const ProjectSection = () => {
 
